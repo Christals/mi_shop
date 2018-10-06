@@ -1,40 +1,56 @@
-html,body,div,span,applet,object,iframe,
-h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,
-acronym,address,big,cite,code,del,dfn,em,
-img,ins,kbd,q,s,samp,small,strike,strong,
-sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,
-li,fieldset,form,label,legend,table,caption,
-tbody,tfoot,thead,tr,th,td,article,aside,canvas,
-details,embed,figure,figcaption,footer,header,
-hgroup,menu,nav,output,ruby,section,summary,
-time,mark,audio,video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline
+/*header*/
+.header{
+	width: 1366px;
+	height: 161px;
 }
-article,aside,details,figcaption,figure,footer,
-header,hgroup,menu,nav,section {
-    display: block
+.header-img{
+	width: 1366px;
+	height: 119px;
 }
-body {
-    line-height: 1
+.header-img img{
+	display: block;
 }
-ol,ul {
-    list-style: none
+
+/*nav 内容导航栏部分*/
+#nav{
+	width: 1366px;
+	height: 789px;
+	background: #fff;
 }
-blockquote,q {
-    quotes: none
+
+/*横导航栏*/
+.nav1{
+	width: 1228px;
+    height: 101px;
+    margin: 0 auto;
+	background: url(images/login_02.jpg) no-repeat left center;
 }
-blockquote:before,blockquote:after,q:before,q:after {
-    content: '';content: none
+/* logo */
+.nav1 h2{
+    float: left;
+	width: 49px;
+    height: 78px;
+    padding-top: 23px;
 }
-fix_clear:aft{
-    content:"";display:block;clear:both;height:0;
-    overflow:hidden;visibility:hidden;
+.nav1 h3{
+    float: left;
+    width: 179px;
+    height: 101px;
 }
-table {border-collapse: collapse;border-spacing: 0}
-fix_clear{zoom:1;}/*IE兼容*/
+.nav1 h2 img,.nav1 h3 img{
+    display: block;
+}
+
+.nav1 ul{
+    
+}
+
+
+
+
+
+
+
+
+
 

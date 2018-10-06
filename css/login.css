@@ -1,0 +1,174 @@
+#login{
+	width: 1366px;
+	height: 834px;
+	background: #f0f0f0;
+}
+.loginCenter{
+	width: 1350px;
+	height: 834px;
+	background: #fff;
+}
+/*头部*/
+.header{
+	width: 1170px;
+	height: 72px;
+	background: url(../images/common/login_02.jpg) no-repeat 111px 26px;
+    padding-left: 180px;
+    padding-top: 26px;
+}
+.header ul{
+	width: 141px;
+	height: 72px;
+}
+.header ul li{
+    float: left;
+    font-size:10px ;
+    line-height: 10px;
+	color:#7a7a7a;
+}
+.header ul li:first-child{
+    font-size: 31px;
+    line-height: 31px;
+	color:#333;
+	margin-bottom: 7px;
+}
+/*登录部分*/
+.Center{
+	width: 520px;
+	height: 556px;
+	background: url(../images/login/banner.jpg);
+	padding-left: 830px;
+	padding-top: 33px;
+}
+.login-form{
+	width: 412px;
+	height: 525px;
+	background: #fff;
+}
+.login-form ul{
+	position: relative;
+	width: 412px;
+	height: 61px;
+	font-size: 22px;
+	color:#666666;
+	padding-top: 32px;
+}
+.login-form ul b{
+	position: absolute;
+	left: auto;
+	color: #e0e0e0;
+}
+.login-form ul li{
+	float: left;
+}
+.login-form ul li:first-child{
+	padding-left: 68px;
+	padding-right: 42px;
+	color: #f56600;
+}
+.login-form ul li:last-child{
+	padding-left: 42px;
+	padding-right: 68px;
+}
+.login-form ul li:active{
+	color: #f56600;
+}
+
+/*root*/
+.root,.password{
+	width: 331px;
+	height: 49px;
+	color: #9d9d9d;
+	font-size: 12px;
+	padding-left: 15px;
+	border: 1px solid #e0e0e0;
+	margin-left: 32px;
+}
+.root{
+	margin-bottom:15px ;
+}
+
+.btn{
+	margin-top: 23px;
+	width: 348px;
+	height: 50px;
+	background: #ef5b00;
+	margin-left: 32px;
+	text-align: center;
+	line-height: 50px;
+	margin-bottom: 14px;
+}
+.btn a{
+	font-size: 12px ;
+	color:#fff;
+}
+
+.btn2{
+	float: left;
+	margin-left: 32px;
+}
+.btn2 a{
+	font-size: 12px;
+	color:#ef5b00
+}
+.login-form .btn3{
+	float: right;
+	margin-right: 32px;
+}
+.login-form .btn3 li{
+	float: left;
+}
+.login-form .btn3 li a{
+	font-size: 12px;
+	color:#9999b2;
+}
+fieldset{
+	width: 348px;
+	margin-top: 130px;
+	margin-left: 32px;
+	border-top: 1px solid #e0e0e0;
+	color:#bbbbbb;
+	font-size: 12px;
+}
+.icon{
+	width: 348px;
+}
+.icon img{
+    margin-left: 38px;
+    margin-top: 16px;
+}
+.icon img:first-child{
+    margin-left: 89px;
+}
+
+/*footer*/
+.footer{
+	width: 1350px;
+	height: 148px;
+    text-align: center;
+    
+}
+.footer ul{
+	width: 350px;
+	height: 15px;
+	margin: 0 auto;
+	font-size:12px ;
+	color:#757575;
+	padding-top: 73px;
+	margin-bottom: 21px;
+}
+.footer ul li{
+	float: left;
+	height: 16x;
+	margin-left: 11px;
+	margin-right: 11px;
+}
+.footer li:first-child{
+	color:#333333;
+}
+.footer p{
+	font-size: 12px;;
+    color:#9da8c2;
+}
+
+

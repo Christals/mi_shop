@@ -1,0 +1,71 @@
+/*header-nav*/
+.header-nav{
+	width: 1366px;
+	height: 42px;
+	background: #333333;
+}
+.header-nav ul{
+	float: left;
+	width: 570px;
+	height: 42px;
+	padding-left: 63px;
+}
+.header-nav ul li{
+	float: left;
+	line-height: 40px;
+	background: url(../../images/common/header-nav_03.jpg) no-repeat right center;
+}
+.header-nav ul li a{
+	padding-left: 7px;
+	padding-right: 7px;
+	font-size: 11px;
+	color:#b0b0b0;
+}
+.header-nav ul li a:hover{
+    color:#fff;
+}
+.header-nav ul .last-nav{
+	background: #333333;
+}
+.header-nav .cart{
+	float: right;
+	margin-right: 70px;
+	width: 122px;
+	height: 42px;
+	background: #424242;
+	text-align: center;
+}
+.header-nav .cart a{
+	font-size: 11px;
+	color:#afafaf;
+	line-height: 42px;
+}
+.header-nav .cart a img{
+    margin-top: 14px;
+}
+.header-nav ol{
+	width: 152px;
+	height: 42px;
+	float: right;
+	/*margin-right: 14px;*/
+}
+.header-nav ol li{
+	float: left;
+	line-height: 42px;
+	background: url(../../images/common/header-nav_03.jpg) no-repeat right center;	
+}
+.header-nav ol li a{
+	padding-left: 7px;
+	padding-right: 7px;
+	font-size: 11px;
+	color:#b0b0b0;
+}
+.header-nav ol li a:hover{
+    color:#fff;
+}
+.header-nav ol li .first-a{
+	padding-left: 0px;
+}
+.header-nav ol .last-a{
+	background: #333333;
+}
