@@ -24,7 +24,6 @@
 	width: 1228px;
     height: 100px;
     margin: 0 auto;
-	background: url(images/login_02.jpg) no-repeat left center;
 }
 /* logo */
 .nav1 h2{
@@ -41,7 +40,7 @@
 .nav1 h2 img,.nav1 h3 img{
     display: block;
 }
-
+/* 商品横导航栏 */
 .nav1 .nav1-list{
 	float:left;
 	width: 696px;
