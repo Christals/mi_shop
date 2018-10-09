@@ -25,7 +25,6 @@ label,button{cursor:pointer}
 .clearfix{zoom:1}.clear{clear:both;height:0;line-height:0;font-size:0;visibility:hidden;overflow:hidden}
 .wordwrap{word-break:break-all;word-wrap:break-word}
 pre.wordwrap{white-space:pre-wrap}
-body{text-align:center}
 body,form{position:relative}
 td{text-align:left}
 img{border:0}

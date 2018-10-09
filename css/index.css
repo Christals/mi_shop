@@ -14,14 +14,15 @@
 /*nav 内容导航栏部分*/
 #nav{
 	width: 1366px;
-	height: 789px;
+	height: 788px;
 	background: #fff;
 }
 
 /*横导航栏*/
 .nav1{
+	position: relative;	
 	width: 1228px;
-    height: 101px;
+    height: 100px;
     margin: 0 auto;
 	background: url(images/login_02.jpg) no-repeat left center;
 }
@@ -29,27 +30,340 @@
 .nav1 h2{
     float: left;
 	width: 49px;
-    height: 78px;
+    height: 77px;
     padding-top: 23px;
 }
 .nav1 h3{
     float: left;
     width: 179px;
-    height: 101px;
+    height: 100px;
 }
 .nav1 h2 img,.nav1 h3 img{
     display: block;
 }
 
-.nav1 ul{
-    
+.nav1 .nav1-list{
+	float:left;
+	width: 696px;
+	height: 100px;
+	font-size: 15px;
+	color:#333333;
+}
+.nav1 .nav1-list li{
+	float: left;
+	line-height: 100px;
+	margin-right:21px;
+}
+.nav1 .nav1-list li:first-child{
+	margin-left: 10px;
+}
+.nav1 .nav1-list li:hover{
+	color:#ff6700;
+}
+/* /导航栏搜索框 */
+.nav1 .nav-search {
+	float: left;
+	width: 244px;
+	height: 49px;
+	margin-top: 25px;
+	border: 1px solid #e0e0e0; 
+}
+.nav1 .search-btn{
+	float: left;
+	width: 51px;
+	height: 51px;
+	margin-top: 25px;
+	border: 1px solid #e0e0e0;
+	border-left: none;
+	background: url(../images/index/search_03.jpg) no-repeat center center;
+}
+.nav1 .search-list{
+	position: absolute;
+	right: 62px;
+	top: 41px;
+	float:right;
+	font-size: 9px;
+	color:#757575;
+}
+.nav1 .search-list li{
+	float: left;
+	height: 18px;
+	line-height: 18px;
+	margin-right: 5px;
+	padding-left: 5px;
+	padding-right: 5px;
+	background: #eeeeee;
 }
 
+/* 轮播图和竖导航栏 */
+.banner{
+	position: relative;
+	width: 1228px;
+	height: 460px;
+	margin:0 auto;
+	overflow: hidden;
+}
+/* 轮播图部分 */
+.banner .banner-image{
+	width: 100000px;
+	position: absolute;
+	left: 0;
+}
+.banner .banner-image li{
+	width: 1228px;
+	height: 460px;
+	float: left;
+}
+.banner-tip{
+	position: absolute;
+	bottom: 25px;
+	right: 34px;
+}
+.banner-tip li{
+	font-size: 12px;
+	color:#fff;
+	width: 8px;
+	height: 8px;
+	line-height: 10px;
+	border-radius: 50%;
+	border: 2px solid #af937b;
+	background: #8e6542;
+	display: inline-block;
+}
+.banner-tip li.active{
+	background: #f3cba7;
+	opacity: 1;     
+}
+/* 竖导航栏部分 */
+.banner .nav2{
+	position: absolute;
+	left: 0px;
+	width: 235px;
+	height: 420px;
+	background: #333;
+	background: rgba(0, 0, 0, 0.6);
+	padding: 20px 0px;
+}
+.banner .nav2 li{
+	padding-left: 32px;
+	width: 203px;
+	height: 42px;
+	line-height: 42px;
+}
+.banner .nav2 li a{
+	font-size: 12px;
+	color:#fff;	
+}
+.banner .nav2 li:hover{
+	background: #ff6700;
+}
 
+/* 引导区和推荐区 */
+.home{
+	margin: 0 auto;
+	width: 1228px;
+	height: 214px;
+	padding-top: 14px;
+}
+.home .home-channel{
+	float: left;
+	width: 235px;
+	height: 171px;
+	background: #5f5750;
+}
+.home .home-channel li{
+	background: url(../images/index/channel_03.jpg) no-repeat right center
+	             ,url(../images/index/channel_07.jpg) no-repeat top center;
+	float: left;
+	width: 78px;
+	height: 85px;
+}
+.home .home-channel li a{	
+	display: block;
+	padding-top: 18px;
+	text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    _zoom: 1;
+    color: #fff;
+    color: rgba(255,255,255,0.7);
+    -webkit-transition: color .2s;
+    transition: color .2s;
+}
+.home .home-channel li a i{
+	display: block;
+    height: 24px;
+    margin-bottom: 4px;
+    font-size: 24px;
+    line-height: 24px;
+}
+.home .home-promo{
+	float: left;
+	width: 992px;
+	height: 171px;
+}
+.home .home-promo li{
+	width: 316px;
+	height: 170px;
+	margin-left: 14px;
+	float: left;
+}
+.home .home-promo li:hover{
+	box-shadow: 5px 5px 5px 3px #e0e0e0;
+}
 
+/* 小米闪购 */
+.millSale{
+	width: 1366px;
+	height: 585px;
+}
+.millCenter{
+	width: 1228px;
+	height: 585px;
+	margin: 0 auto;
+}
+.millSale .millSale-title{
+	width: 1228px;
+	height: 41px; 
+}
+.millSale .millSale-title span{
+	font-size: 20px;
+	color:#333;
+}
+/* 小米闪购的按钮 */
+.millSale .millSale-leftbtn,.millSale .millSale-rightbtn{
+	float: right;
+	width: 35px;
+	height: 24px;
+	border: 1px solid #e0e0e0;
+	margin-top: 6px;
+}
+.millSale .millSale-leftbtn{
+	background: url(../images/index/millbtn_05.jpg) no-repeat center center;
+}
+.millSale .millSale-rightbtn{
+	border-right: none;	
+	background: url(../images/index/millbtn_03.jpg) no-repeat center center;	
+}
 
+/* 小米限时购买 */
+ .millSale-center{
+	width: 1228px;
+	height: 281px;
+}
 
+/* 小米倒计时区 */
+.millSale-center .flash-sale1{
+	border-top: 1px solid #e53935;
+	width: 235px;
+	height: 281px;
+	float: left;
+	text-align: center;
+	padding-top: 60px; 
+	background: #f1eded url(../images/index/flash_03.jpg) no-repeat 102px 111px;
+}
+.millSale-center .flash-sale1 span{
+	display: block;
+	font-size: 20px;
+	color:#ef3a3b;
+	margin-bottom: 119px;
+}
+.millSale-center .flash-sale1 em{
+	font-size: 20px;
+	color:#706f6f;
+}
 
+.millSale-center .countdown{
+	margin-top: 33px;
+	margin-left: 34px; 
+	width: 169px;
+	height: 46px;
+}
+.millSale-center .countdown li{
+	float: left;
+	width: 46px;
+	height: 46px;
+	font-size: 17px;
+	color:#fff;
+	background: #605751;
+	line-height: 46px;
+}
+.millSale-center .countdown .dosh{
+	font-size: 32px;
+	width: 14px;
+	background: #f1eded;
+	color:#605751;
+}
+
+/* 小米折扣优惠区 */
+.discount {
+	float: left;
+	width: 992px;
+	height: 341px;
+}
+.discount .discount1{
+	float: left;
+	text-align: center;
+	border-top: 1px solid #ffac13;
+	margin-left: 14px;
+	width: 234px;
+	height: 341px;
+	background: #fafafa;
+}
+.discount .discount1 span{
+	display: inline-block;
+	width: 64px;
+	height: 20px;
+	line-height: 20px;
+	background: #e53935;
+	font-size: 11px;
+	color:#fff;
+}
+.discount .discount1 .shop-image {
+	width: 235px;
+	height: 210px;
+}
+.discount .discount1 .shop-image img{
+	vertical-align: middle;
+}
+.discount .discount1 .shop-image i{
+	height: 100%;
+	display: inline-block;
+	vertical-align: middle;
+}
+.discount .discount1 h3{
+	display: block;
+	margin-bottom: 11px;
+	font-size: 13px;
+	color:#202020;
+}
+.discount .discount1 .desc{
+	font-size: 12px;
+	color:#adadad;
+}
+.discount .discount1 .price{
+	display: block;
+	margin-top: 20px;
+	font-size: 12px;
+}
+.discount .discount1 .price em{
+	color:#fa7c09;
+}
+.discount .discount1 .price del{
+	color:#adadad;
+}
+
+.millSale-bottom{
+	float: left;
+	width: 1228px;
+	height: 122px;
+	margin:42px 0px;
+}
+.millSale-bottom img{
+	float: left;
+	display: block;
+}
 
 
 
