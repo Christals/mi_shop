@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>index</title>
+	<title>index</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/css/swiper.min.css">	
     <link rel="stylesheet" type="text/css" href="css/common/reset.css">
     <link rel="stylesheet" type="text/css" href="css/index.css"/>
     <link rel="stylesheet" type="text/css" href="css/common/header-nav.css"/>
-    <link rel="stylesheet" type="text/css" href="css/icon/iconfont.css">
+	<link rel="stylesheet" type="text/css" href="css/icon/iconfont.css">
 </head>
 <body>
 	<!--header-->
@@ -62,42 +63,56 @@
 		 		<li>社区</li>
 			 </ul>
 			 <input type="text" class="nav-search" value="">
-			 <button class="search-btn"></button>
+			 <button class="search-btn"><i class="iconfont icon-sousuo"></i></button>
 			<ul class="search-list">		 
 				<li>小米8</li>
 				<li>小米MIX2S</li>
 			</ul>
 		 </div>
-
+		 <!-- .nav1商品栏的子导航栏 -->
+        <div class="list-child">
+				<ol>
+					<li>
+						<span>新品</span>
+						<div>
+							<img src="images/index/nav1_03.jpg" alt="">
+							<em></em>
+						</div>
+						<a href="#">红米6 pro</a>
+						<p>799元</p>
+					</li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ol>
+		</div>
 		 <!-- 轮播图和竖导航栏 -->
 		<div class="banner">
 			<!-- 轮播图部分 -->
-			<ul class="banner-image">
-				<li><img src="images/index/banner1.jpg" alt=""></li>
-				<li><img src="images/index/banner1.jpg" alt=""></li>
-				<li><img src="images/index/banner1.jpg" alt=""></li>
-				<li><img src="images/index/banner1.jpg" alt=""></li>
-				<li><img src="images/index/banner1.jpg" alt=""></li>
-			</ul>
-			<ul class="banner-tip">
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-			</ul>
+			<div class="swiper-container  banner-image " id="swiper1">
+				<ul class="swiper-wrapper">
+						<li class="swiper-slide"><img src="images/index/banner1.jpg" alt=""></li>
+						<li class="swiper-slide"><img src="images/index/banner2.jpg" alt=""></li>
+						<li class="swiper-slide"><img src="images/index/banner3.jpg" alt=""></li>
+						<li class="swiper-slide"><img src="images/index/banner4.jpg" alt=""></li>
+						<li class="swiper-slide"><img src="images/index/banner5.jpg" alt=""></li>
+				</ul>
+				<ul class="swiper-pagination"></ul>
+				<div class="swiper-button-prev swiper-button-white"></div><!--左箭头-->
+				<div class="swiper-button-next swiper-button-white"></div><!--右箭头-->
+			</div>
             <!-- 竖导航栏部分 -->
             <ul class="nav2">
-				<li><a href="#">手机 电话卡</a></li>
-				<li><a href="#">手机 电话卡</a></li>
-				<li><a href="#">手机 电话卡</a></li>
-				<li><a href="#">手机 电话卡</a></li>
-				<li><a href="#">手机 电话卡</a></li>
-				<li><a href="#">手机 电话卡</a></li>
-				<li><a href="#">手机 电话卡</a></li>
-				<li><a href="#">手机 电话卡</a></li>
-				<li><a href="#">手机 电话卡</a></li>
-				<li><a href="#">手机 电话卡</a></li>
+				<li><a href="#">手机 电话卡</a><i class='iconfont icon-jianjiaohao-r'></i></li>
+				<li><a href="#">电视 盒子</a><i class='iconfont icon-jianjiaohao-r'></i></li>
+				<li><a href="#">笔记本 平板</a><i class='iconfont icon-jianjiaohao-r'></i></li>
+				<li><a href="#">家电 插线板</a><i class='iconfont icon-jianjiaohao-r'></i></li>
+				<li><a href="#">出行 穿戴</a><i class='iconfont icon-jianjiaohao-r'></i></li>
+				<li><a href="#">智能 路由器</a><i class='iconfont icon-jianjiaohao-r'></i></li>
+				<li><a href="#">电源 配件</a><i class='iconfont icon-jianjiaohao-r'></i></li>
+				<li><a href="#">健康 儿童</a><i class='iconfont icon-jianjiaohao-r'></i></li>
+				<li><a href="#">耳机 音响</a><i class='iconfont icon-jianjiaohao-r'></i></li>
+				<li><a href="#">生活 箱包</a><i class='iconfont icon-jianjiaohao-r'></i></li>
 			</ul>
 		</div>
 		<!-- 引导区和推荐区 -->
@@ -193,5 +208,11 @@
 				</div>
 		</div>
 	</div>
+    <script src="js.nav1-child.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/js/swiper.min.js"></script>
+	<script src="js/swiper.js"></script>
+	<script>
+		navChild1.init('#nav');
+	</script>
 </body>
 </html>

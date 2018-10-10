@@ -17,6 +17,4 @@
       $arr = array("code" => "200", "msg" => "");
     }
     echo json_encode($arr);
-
-   
   ?>

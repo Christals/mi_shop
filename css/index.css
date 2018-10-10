@@ -13,6 +13,7 @@
 
 /*nav 内容导航栏部分*/
 #nav{
+	position: relative;
 	width: 1366px;
 	height: 788px;
 	background: #fff;
@@ -59,6 +60,61 @@
 .nav1 .nav1-list li:hover{
 	color:#ff6700;
 }
+/* .nav1商品栏的子导航栏 */
+#nav .list-child,#nav .list-child ol{
+	background: #fff;
+    width: 1366px;
+	height: 229px;
+}
+#nav .list-child{
+	position: absolute;
+	top: 100px;
+	left: 0px;
+	z-index: 200;
+	border: 1px solid #e0e0e0;
+	box-shadow: 0px 1px 8px 1px #e0e0e0;
+}
+#nav .list-child ol{
+	padding-left: 62px;
+	width: 1304px;
+	float: left;
+	font-size: 11px;
+	text-align: center;
+}
+#nav .list-child ol li{
+	width: 205px;
+	height: 230px;
+	float: left;
+	background: url(../images/index/listchild_03.jpg) no-repeat right 35px;
+}
+#nav .list-child ol li span{
+	display: inline-block;
+	width: 66px;
+	height: 20px;
+	line-height: 20px;
+	border: 1px solid #ff8a3b;
+	color:#ff8a3b;
+}
+#nav .list-child ol li div{
+	width: 205px;
+	height: 146px;
+}
+#nav .list-child ol li div img{
+	vertical-align: middle;
+}
+#nav .list-child ol li div em{
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;	
+}
+#nav .list-child ol li a{
+	color:#333;
+	display: block;
+	margin-bottom: 4px;
+}
+#nav .list-child ol li p{
+	color:#ff8a3b;
+}
 /* /导航栏搜索框 */
 .nav1 .nav-search {
 	float: left;
@@ -74,7 +130,14 @@
 	margin-top: 25px;
 	border: 1px solid #e0e0e0;
 	border-left: none;
-	background: url(../images/index/search_03.jpg) no-repeat center center;
+	background: #fff;
+}
+.nav1 .search-btn i{
+	font-size: 24px;
+}
+.nav1 .search-btn:hover{
+	color:#fff;
+	background: #fa7c09;
 }
 .nav1 .search-list{
 	position: absolute;
@@ -82,9 +145,9 @@
 	top: 41px;
 	float:right;
 	font-size: 9px;
-	color:#757575;
 }
 .nav1 .search-list li{
+	color:#757575;
 	float: left;
 	height: 18px;
 	line-height: 18px;
@@ -92,6 +155,10 @@
 	padding-left: 5px;
 	padding-right: 5px;
 	background: #eeeeee;
+}
+.nav1 .search-list li:hover{
+	background: #fa7c09;
+	color:#fff;
 }
 
 /* 轮播图和竖导航栏 */
@@ -113,28 +180,44 @@
 	height: 460px;
 	float: left;
 }
-.banner-tip{
+/* 分页器 */
+.swiper-container .swiper-pagination{
+	z-index: 120;
+	width: 400px;
+	height: 18px;
 	position: absolute;
 	bottom: 25px;
-	right: 34px;
+	left: 767px;
 }
-.banner-tip li{
-	font-size: 12px;
-	color:#fff;
+.swiper-container .swiper-pagination li{
+	float: right;
 	width: 8px;
 	height: 8px;
 	line-height: 10px;
 	border-radius: 50%;
-	border: 2px solid #af937b;
+	border: 2px solid #fff;
 	background: #8e6542;
 	display: inline-block;
 }
-.banner-tip li.active{
+.swiper-container .swiper-pagination li.active{
 	background: #f3cba7;
 	opacity: 1;     
 }
+/* 轮播左箭头 */
+.swiper-container .swiper-button-prev,.swiper-container .swiper-button-next{
+    position: absolute;
+	z-index: 999;
+}
+.swiper-container .swiper-button-prev{
+	left: 235px;
+}
+/* 轮播右箭头 */
+.swiper-container .swiper-button-next{
+    left: 1199px;
+}
 /* 竖导航栏部分 */
 .banner .nav2{
+	z-index: 100;
 	position: absolute;
 	left: 0px;
 	width: 235px;
@@ -144,14 +227,19 @@
 	padding: 20px 0px;
 }
 .banner .nav2 li{
+	position: relative;
 	padding-left: 32px;
 	width: 203px;
 	height: 42px;
 	line-height: 42px;
 }
-.banner .nav2 li a{
+.banner .nav2 li a,.banner .nav2 li i{
 	font-size: 12px;
 	color:#fff;	
+}
+.banner .nav2 li i{
+	position: absolute;
+    right: 20px;
 }
 .banner .nav2 li:hover{
 	background: #ff6700;
@@ -164,6 +252,7 @@
 	height: 214px;
 	padding-top: 14px;
 }
+/* 引导区channel */
 .home .home-channel{
 	float: left;
 	width: 235px;
@@ -197,6 +286,10 @@
     font-size: 24px;
     line-height: 24px;
 }
+.home .home-channel li a:hover{
+	color:#fff;
+}
+/* 推荐区 promo*/
 .home .home-promo{
 	float: left;
 	width: 992px;
