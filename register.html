@@ -9,43 +9,44 @@
     <link rel="stylesheet" href="css/register.css">
 </head>
 <body>
-	<div id="regist">
-		<div class="registCenter">
-			<h1><img src="images/common/login_02.jpg"/></h1>
-			<form action="" method="post" class="regist-form" onsubmit="return false">
-				<h2>注册小米账号</h2>
-				<div class="address">
-					<label for="addr"><h3>国家/地区</h3></label></br>
-				    <input type="text" placeholder="中国" id="addr"/>
-					<p>成功注册账号后，国家/地区不能更改</p>
-				</div>
-                <div class="phone">
-                	<label for="tel"><h4>手机号码</h4></label></br>
-                	<select name="">
-                		<option value="+86"></option>
-                		<option value="+86"></option>
-                		<option value="+86"></option>
-                	</select>
-				    <input type="text" placeholder="请输入手机号" id="tel"/>
-                    <div class ="btn">
-					<a href="###">立即注册</a>
-				</div>
-                </div>
-				
-			</form>
-			<div class="xy">
-				注册账号即表示同意并愿意遵守小米<a href="#">用户协议</a>和<a href="#">隐私政策</a>
+	<div id="big_box">
+		<div class="header"></div>
+		<h2>注册小米账号</h2>
+		<form class="check" onsubmit="return false">
+			<h3>国家/地区</h3>
+			<div class="check_one"><input name="username" class="inp_first" type="text" required="required" /><button class="btn_top"></button></div>
+			<h4>注册成功后，国家/地区将不能被修改</h4>
+			<h5>手机号码</h5>
+			<div class="check_two"><button class="btn_center">+86</button><input name="password" type="password" required="required" class="inp_two"/></div>
+			<button class="btn_buttom" name="login-btn">立即注册</button>
+			
+		</form>
+		<div class="artical">
+				<span>注册账号即表示您同意并愿意遵守小米</span>
+				<b>用户协议</b>
+				<span>和</span>
+				<b>隐私政策</b>	
 			</div>
-		</div>
-		<div class="footer">
-			<ul>
-				<li>简体&nbsp;&nbsp;&nbsp;|</li>
-				<li>繁体&nbsp;&nbsp;&nbsp;|</li>
-				<li>English&nbsp;&nbsp;&nbsp;&nbsp;|</li>
-				<li>常见问题</li>
+	</div>
+	<div id="foot">
+		<div class="foot_box">
+			<ul class="foot_top">
+				<li><a href="">简体&nbsp;&nbsp;&nbsp;|</a></li>
+				<li><a href="">繁体&nbsp;&nbsp;&nbsp;|</a></li>
+				<li><a href="">English&nbsp;&nbsp;&nbsp;&nbsp;|</a></li>
+				<li><a href="">常见问题</a></li>
 			</ul>
-			<p>小米公司版权所有-京ICP备10046444-<img src="images/login/ghs.png" alt="">京公网安备11010802020134号-京ICP证110507号</p>
+			<ul class="foot_bottom">
+				<li><a href="">小米公司版权所有-京ICP备10046444-</a></li>
+				<li><a href=""><img src="images/login/ghs.png" alt="" /></a></li>
+				<li><a href="">京公网安备11010802020134号-京ICP证110507号</a></li>
+			</ul>
 		</div>
 	</div>
+	<!-- <script src="js/zhuceajax.js"></script>
+	<script src="js/zhuce.js"></script>
+	<script>
+        register.init('.check');
+    </script> -->
 </body>
 </html>

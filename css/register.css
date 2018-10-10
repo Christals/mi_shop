@@ -1,130 +1,149 @@
-#regist{
-	width: 1366px;
-	height: 639px;
+/* html,body,ul,li,ol,dl,dd,dt,p,h1,h2,h3,h4,h5,h6,form,fieldset,legend,img,input,figure,figcaption{margin:0;padding:0;}
+h1,h2,h3,h4,h5,h6{font-size:16px;font-weight:normal;}
+ul,ol,li{list-style:none;}
+b,strong{font-weight:normal;}
+em,i{font-style:normal;}
+a,u{text-decoration: none;}
+img{border:0;display:block;}
+input{outline:none;} */
+body{
 	background: #f9f9f9;
 }
-.registCenter{
-	width: 874px;
-	height: 550px;
-	background: #fff;
+#big_box{
+	/*text-align: center;*/
+	width:855px;
+	height:546px;
 	margin: 0 auto;
-	text-align: center;
+	background: url(../images/common/login_02.jpg)no-repeat center 0px;
+	background-color: #fff;
 }
-.registCenter h1{
-	display: inline-block;
-	width: 49px;
-	height: 48px;
-	margin-bottom: 48px;
-}
-.regist-form{
-	width: 856px;
-	height: 315px;
-}
-.regist-form h2{
-	font-size: 29px;
-	color: #333333;
-	margin-bottom: 42px;
+.header{
+	width:47px;
+	height:48px;
+	margin:0 auto;
 	
 }
-.address{
-	height: 107px;
-    /*width: 332px;*/
+.check{
+	width:336px;
+	height:245px;
+	margin:0 auto;
+	margin-top:60px;
 }
-h3,h4{
-	/*text-align: left;*/
-    color:#333333;
-    font-size: 12px;
-    line-height: 12px;
+#big_box h2{
+	font-size:27px;
+	margin-top: 47px;
+	margin-left:338px;
 }
-#addr{
-	width: 317px;
-	font-size: 12px;
-	color:#555555;
-	height: 40px;
-	padding-left: 15px;
-	border: 1px solid #e8e8e8;
+#big_box h3{
+	font-size:12px;
+	margin-bottom:10px;
 }
-.address p{
-	font-size: 12px;
-	color:#555555;
-	margin-top: 9px;
+.check_one{
+	width:334px;
+	height:42px;
+}
+.inp_first{
+	width:290px;
+	height:39px;
+	float:left;
+	border:1px solid #e8e8e8;
 }
 
-.phone{
-	/*width: ;*/
-	height: 137px;
+.btn_top{
+	width:42px;
+	height:41px;
+	border:1px solid #e8e8e8;
+	border-left:none;
+	background:url(../images/regist/dl1.jpg)no-repeat center;
+	float:right;
 }
-select{
-	width: 78px;
-	height: 40px;
-	border: 1px solid #e8e8e8;
+#big_box h4{
+	font-size: 12px;
+	margin-top: 10px;
+	color:#666666;
 }
-#tel{
-	width: 256px;
-	height: 40px;
-	border: 1px solid #e8e8e8;
-	margin-bottom: 30px;
+#big_box h5{
+	font-size: 12px;
+	margin-top: 20px;
+	margin-bottom:10px;
 }
-.btn{
-	width: 330px;
-	height: 42px;
+.check_two{
+	width:332px;
+	height:42px;
+}
+.btn_center{
+	width:72px;
+	height:42px;
+	float:left;
+	border:1px solid #e8e8e8;
+	background: #fff;
+}
+.inp_two{
+	width:258px;
+	height:39px;
+	float:right;
+	border:1px solid #e8e8e8;	
+}
+.btn_buttom{
+	width:334px;
+	height:42px;
 	background: #ff6700;
-	margin: 0 auto;
-	line-height: 42px;
+	margin-top: 30px;
+	color:#fff;
+	border:none;
 }
-.btn a{
-	font-size: 12px;
-	color: #fff;
+.artical{
+	width:400px;
+	height:20px;
+	background: url(../images/regist/dl2.jpg) no-repeat left;
+	margin-left:231px;
+	margin-top: 25px;
 }
-.xy{
-	height: 57px;
-	font-size:12px ;
+.artical span{
+	font-size:12px;
 	color:#9d9d9d;
-	margin: 0 auto;
-	padding-top: 84px;
 }
-.xy a{
-	font-size:12px ;
-	color:#333333;
+.artical b{
+	font-size:13px;
+	color:black;	
 }
-
-/*footer*/
-.footer{
-	width: 874px;
-	height: 90px;
-	margin: 0 auto;
-	text-align: center;
+.artical span:nth-of-type(1){
+	margin-left:25px;
 }
-.footer ul{
-	width: 350px;
-	height: 15px;
-	margin: 0 auto;
-	font-size:12px ;
+#foot{
+	width:100%;
+	height:132px;
+}
+.foot_box{
+	width:569px;
+	height:79px;
+	margin:0 auto;
+	padding-top:53px;
+}
+.foot_box .foot_top{
+	margin-left: 124px;
+}
+.foot_box .foot_top li{
+	float:left;
+	padding-left:12px;
+	padding-right:12px;
+}
+.foot_box .foot_top li:last-child{
+	background: none;
+}
+.foot_box .foot_top li a{
+	display: block;
+	font-size:12px;
 	color:#757575;
-	padding-top: 15px;
-	margin-bottom: 21px;
 }
-.footer li{
-	float: left;
-	height: 16x;
-	margin-left: 11px;
-	margin-right: 11px;
+.foot_box .foot_bottom li{
+	float:left;
+	margin-top:11px;
 }
-.footer li:first-child{
-	color:#333333;
+.foot_box .foot_bottom li:first-child{
+	margin-left:30px;
 }
-.footer p{
-	font-size: 12px;;
-	color:#9da8c2;
+.foot_box .foot_bottom li a{
+	font-size:12px;
+	color:#757575;
 }
-
-
-
-
-
-
-
-
-
-
-
