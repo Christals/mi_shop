@@ -20,22 +20,22 @@
 			</div>
 			<!--登录部分-->
 			<div class="Center">
-				<form action="" method="post" class="login-form" onsubmit="return false" >
+				<form action="" class="login-form" onsubmit="return false" >
 					<ul>
 						<li>账号登录</li>
 						<b>|</b>
 						<li>扫码登录</li>
 					</ul>
-					<input type="text" class="root" value="" placeholder="邮箱/手机号/小米ID" /></br>
-					<input type="text" class="password" value="" placeholder="密码"/>
-				    <div class="btn">
+					<input name="username" type="text" required="required" class="root" placeholder="邮箱/手机号/小米ID" /></br>
+					<input name="password" type="password" required="required" class="password" placeholder="密码"/>
+				    <button class="btn" type="submit" name="login-btn">
 				    	<a href="#">登录</a>
-				    </div>
+					</button>
 				    <div class="btn2">
 				    	<a href="#">手机短信登录/注册</a>
 				    </div>
 				    <ol class="btn3">
-				    	<li><a href="#">立即注册 |</a></li>
+				    	<li><a href="register.html">立即注册 |</a></li>
 				    	<li><a href="#">&nbsp;忘记密码?</a></li>
 				    </ol>
 				    <fieldset >
@@ -61,5 +61,10 @@
 			</div>
 		</div>
 	</div>
+	<script src="js/common/ajax.js"></script>	
+	<script src="js/login.js"></script>
+	<script>
+        login.init('.login-form');
+    </script>
 </body>
 </html>
