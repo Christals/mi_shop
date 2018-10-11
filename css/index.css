@@ -61,7 +61,8 @@
 	color:#ff6700;
 }
 /* .nav1商品栏的子导航栏 */
-#nav .list-child,#nav .list-child ol{
+#nav .list-child{
+	display: none;	
 	background: #fff;
     width: 1366px;
 	height: 229px;
@@ -246,6 +247,44 @@
 .banner .nav2 li:hover{
 	background: #ff6700;
 }
+/* 竖导航栏部分子导航栏部分 */
+.banner .nav2-box{
+	display: none;
+	z-index: 10000;
+	height: 460px;
+	border:1px solid #e0e0e0;
+	box-shadow: 1px 2px 1px 1px #eeeeee;
+	background: #fff;
+	position: absolute;  
+	top: 0px;
+	left: 235px;
+	font-size: 12px;
+	color:#929292;
+}
+.banner .navChild2{
+	float: left;
+}
+.banner .navChild2,.banner .navChild2 li{
+	width: 266px;
+	height: 76px;
+	line-height: 76px;
+}
+.banner .navChild2 li div{
+	float: left;
+	width: 72px;
+	height: 76px;
+	text-align: center;	
+}
+.banner .navChild2 li div img{
+	vertical-align: middle;
+}
+.banner .navChild2 li div em{
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+
+
 
 /* 引导区和推荐区 */
 .home{
