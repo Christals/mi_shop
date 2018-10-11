@@ -269,6 +269,9 @@
 	height: 76px;
 	line-height: 76px;
 }
+.banner .navChild2 li:hover{
+	color:#ff8a3b
+}
 .banner .navChild2 li div{
 	float: left;
 	width: 72px;
