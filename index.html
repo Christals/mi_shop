@@ -71,7 +71,7 @@
 		 </div>
 		 <!-- .nav1商品栏的子导航栏 -->
         <div class="list-child">
-				<ol>
+				<ol class="listChild">
 					<li>
 						<span>新品</span>
 						<div>
@@ -208,11 +208,13 @@
 				</div>
 		</div>
 	</div>
-    <script src="js.nav1-child.js"></script>
+
+	<script src="js/common/ajax2.0.0.js"></script>
+    <script src="js/nav1-child.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/js/swiper.min.js"></script>
 	<script src="js/swiper.js"></script>
 	<script>
-		navChild1.init('#nav');
+		navChild1.init('.listChild');
 	</script>
 </body>
 </html>

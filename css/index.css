@@ -123,6 +123,7 @@
 	margin-top: 25px;
 	border: 1px solid #e0e0e0; 
 }
+/* 搜索按钮 */
 .nav1 .search-btn{
 	float: left;
 	width: 51px;
@@ -139,6 +140,7 @@
 	color:#fff;
 	background: #fa7c09;
 }
+/* 搜索框里内容 */
 .nav1 .search-list{
 	position: absolute;
 	right: 62px;
@@ -182,7 +184,7 @@
 }
 /* 分页器 */
 .swiper-container .swiper-pagination{
-	z-index: 120;
+	/* z-index: 120; */
 	width: 400px;
 	height: 18px;
 	position: absolute;
