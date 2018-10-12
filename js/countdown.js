@@ -3,33 +3,35 @@ var countDown = (function () {
         init: function (ele) {
             this.$ele = document.querySelector(ele);
             this.$span = this.$ele.querySelector('span');
-            this.$countdown = this.$ele.querySelector('.countdown');
-            console.log(this.$ele);
-            
-            this.$liAll = this.$countdown.querySelectorAll('li');
+            this.$liAll = this.$ele.querySelectorAll('li');
             this.$hours = this.$liAll[0];
-            this.$mins = this.$liAll[2];
+            this.$minus = this.$liAll[2];
             this.$secs = this.$liAll[4];
             this.event();
         },
         event: function () {
             var _this = this;
-            var countdownMinute = 23 * 60 * 60;//10分钟倒计时
-            var startTimes = new Date('2018-10-11 15:21');//开始时间 new Date('2016-11-16 15:21');
-            var endTimes = new Date(startTimes.setMinutes(startTimes.getMinutes() + countdownMinute));//结束时间
+            var countdownMinute = 20 * 60 * 60;//23小时倒计时
+            var startTimes = new Date(new Date().setHours(0, 0, 0, 0));//开始时间当天0时0分;
+            var endTimes = new Date(new Date(new Date().toLocaleDateString()).getTime()+24*60*60*1000-2);//结束时间 当天22时59分59秒
             var curTimes = new Date();//当前时间
             var surplusTimes = endTimes.getTime() / 1000 - curTimes.getTime() / 1000;//结束毫秒-开始毫秒=剩余倒计时间
             // 进入倒计时
             var countdowns = window.setInterval(function () {
                 surplusTimes--;
-                var minu = Math.floor(surplusTimes / 60);
-                _this.$mins.innerHtml = minu; 
-                console.log(minu);
+                var hour = Math.floor(surplusTimes / 60 / 60 % 24);
+                _this.$hours.innerHTML = hour;
+                var minu = Math.floor(surplusTimes / 60 % 60);
+                _this.$minus.innerHTML = minu; 
                 var secd = Math.round(surplusTimes % 60);
-                console.log(minu + ':' + secd);
+                _this.$secs.innerHTML = secd;
+                console.log(hour+ ':' + minu + ':' + secd);              
                 if (surplusTimes <= 0) {
                     console.log('时间到！');
                     clearInterval(countdowns);
+                _this.$hours.innerHTML = '00';
+                _this.$minus.innerHTML = '00'; 
+                _this.$secs.innerHTML = '00'; 
                 }
             }, 1000);
         }
