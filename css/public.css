@@ -89,9 +89,10 @@ textarea {
 /* header */
 header{
     background: #ffffff;
-    height: 1532px;
+    height: 260px;
 }
 .nav{
+    width: 1366px;
     height: 40px;
     background: #333333;
 }

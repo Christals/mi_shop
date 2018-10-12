@@ -5,27 +5,233 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>details</title>
+    <link rel="stylesheet" href="css/detail.css">                    
     <link rel="stylesheet" type="text/css" href="css/public.css"/>
     <link rel="stylesheet" href="css/icon/iconfont.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/css/swiper.min.css">
 </head>
 <body>
     <!-- 头部 -->
      <div class="header">
      </div>
-     
-    <!-- 内容部分 -->
-     <div class="mian">
+     <div class="header2"></div>
 
-     </div>
+     <!-- 商品信息导航 -->
+    <div class="nav-bar">
+        <div class="con">
+            <h2 class="J_proName">小米8 SE</h2>
+            <div class="con-left">
+                <span class="separator">|</span>
+                <a href="#">小米8</a>
+                <span class="separator">|</span>
+                <a href="#">小米8 透明探索版</a>
+            </div>
+            <div class="con-right">
+                <a href="#">概述</a>
+                <span class="separator">|</span>
+                <a href="#">图集</a>
+                <span class="separator">|</span>
+                <a href="#">参数</a>
+                <span class="separator">|</span>
+                <a href="#" target="_blank">F码通道</a>
+                <span class="separator">|</span>
+                <a href="#">用户评价</a>
+            </div>
+        </div>
+    </div>
+    <!-- 提示登录 -->
+    <div class="hint">
+            为方便您购买，请提前登录
+            <a href="login.html" class="J_proLogin">立即登录</a>
+            <a href="#" class="J_proLoginClose">X</a>
+    </div>
+    <!-- 内容部分 -->
+    <div class="pro-main">
+            <!-- 轮播图 -->
+            <div class="pro-view-choose">
+                <div class="img-icon">
+                    <div class="img-wrapper swiper-container" id="swiper2">
+                        <div class="img-wrap swiper-wrapper">
+                            <img class="swiper-slide" src="images/detail/detail.jpg" alt="">
+                            <img class="swiper-slide" src="images/detail/detail1.jpg" alt="">
+                            <img class="swiper-slide" src="images/detail/detail3.jpg" alt="">
+                            <img class="swiper-slide" src="images/detail/detail4.jpg" alt="">
+                        </div>
+                        <div class="swiper-button-prev "></div><!--左箭头-->
+                        <div class="swiper-button-next "></div><!--右箭头-->
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    <!-- 分页器 -->
+                    <!-- 左右按钮 -->
+                </div>
+            </div>
+            <!-- 商品信息 -->
+            <div class="pro-info">
+                <h1 class="pro-title">小米8 屏幕指纹版</h1>
+                <p class="sale-desc">
+                    <font color="#ff4a00">「新品现货在售」</font>
+                    全球首款 压感屏幕指纹 / 双频GPS超精准定位 / 支持红外人脸识别 / 骁龙845 AIE 旗舰处理器
+                </p>
+                <span class="pro-price">3599元 </span>
+                <div class="sale-wrap">
+                    <div class="flow-wrap">
+                        <span class="flow-tag">赠品</span> 
+                        <span class="flow-name">赠米粉卡，内含100元话费</span> 
+                    </div>
+                </div>
+                <!-- 主要内容 -->
+                <div class="info-main-wrap">
+                    <!-- 地址 -->
+                    <div class="address-wrap">
+                        <div class="default-address">
+                            <span class="item">北京</span>
+                            <span class="item">北京市</span>
+                            <span class="item">东城区</span>
+                            <span class="item">永定门外街道</span>
+                            <span class="item"><a href="#">修改</a></span>
+                            <p class="state">有现货</p>
+                        </div>   
+                    </div>
+                    <div class="list-wrap">
+                        <div class="list-1 common-list">
+                            <h3 class="list-title">选择版本</h3>
+                            <ul class="choose-version">
+                                <li class="version-1">
+                                    <a href="#">
+                                        <span class="name">8GB+128GB 全网通</span>
+                                        <span class="price"> 3599元 </span>
+                                    </a>
+                                </li>
+                                <li class="version-2">
+                                    <a href="#">
+                                        <span class="name">6GB+128GB 全网通</span>
+                                        <span class="price"> 3199元 </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="list-2 common-list">
+                            <h3 class="list-title">选择颜色</h3>
+                            <ul class="choose-version choose-2">
+                                <li class="version-1">
+                                    <a href="#">
+                                        <img src="images/detail/detail.jpg" alt="暮光金">
+                                        玫瑰红
+                                    </a>
+                                </li>
+                                <li class="version-2">
+                                    <a href="#">
+                                        <img src="images/detail/pink1.jpg" alt="玫瑰红">
+                                        暮光金
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="list-3">
+                            <h3 class="list-title">选择小米提供的保障服务
+                                <a href="#">了解保障服务 ></a>
+                            </h3>
+                            <ul class="last-ul">
+                                <li>
+                                    <i class="circle"></i>
+                                    <img src="images/detail/bao.jpg" alt="">
+                                    <div>
+                                        <span class="name">意外保障服务</span>
+                                        <p class="desc">手机意外摔落、进水、碾压等损坏</p>
+                                        <p class="agreement">
+                                            <i></i>我已阅读
+                                            <a href="#">服务条款<span>|</span></a>
+                                            <a href="#">常见问题</a>
+                                        </p>
+                                        <span class="price">  299元  </span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="circle"></i>
+                                    <img src="images/detail/bao.jpg" alt="">
+                                    <div>
+                                        <span class="name">意外保障服务</span>
+                                        <p class="desc">手机意外摔落、进水、碾压等损坏</p>
+                                        <p class="agreement">
+                                            <i></i>我已阅读
+                                            <a href="#">服务条款
+                                                <span>|</span>
+                                            </a>
+                                            <a href="#">常见问题</a>
+                                        </p>
+                                        <span class="price"> 299元 </span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="pro-list" id="J_proList">
+                        <ul>
+                            <li>小米8 屏幕指纹版 8GB+128GB 暮光金
+                                <span> 3599元</span>
+                            </li>
+                            <li class="totlePrice"> 总计 ：3599元 </li>
+                        </ul>
+                    </div>
+                    <ul class="btn-wrap">
+                        <li><a class="add" href="#">加入购物车</a></li>
+                        <li><a class="like" href="#">❤喜欢</a></li>
+                    </ul>
+                    <a href="#">
+                        <span class="support">
+                            <em>7天无理由退货</em>
+                        </span>
+                        <span class="support">
+                            <em>15天质量问题换货</em>
+                        </span>
+                        <span class="support">
+                            <em>365天保修</em>
+                        </span>
+                    </a>
+                </div>
+    
+            </div>
+        </div>
 
      <!-- 底部 -->
      <div class="footer">
      </div>
 
-     <script src="js/jquery-3.3.1.min.js"></script>
+
+     <script src="js/jquery-3.3.1.min.js"></script> 
+     <!-- 轮播图swiper插件     -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/js/swiper.min.js"></script>
+     <script src="js/swiper.js"></script>
      <script>
-          $('.header').load('public.html header');
+          $('.header').load('public.html .nav');
+          $('.header2').load('public.html .search');          
           $('.footer').load('public.html footer'); 
     </script>
+    <!-- 头部导航栏的子导航栏的鼠标滑过显示事件 -->
+    <script>
+            $(document).ready(function () {
+                $(".search_li").hover(function () {
+                    $(".nav_show").toggle();
+                });
+            });
+    </script>
+     <!-- 在滑动屏幕时商品信息导航始终显示在屏幕上 -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/posfixed.js"></script>
+    <script>
+          $(".pro-info").scroll(function () {
+            $("pro-view-choose").css({"margin-top" :"600px"});
+            console.log(1);
+        });
+        $(document).ready(function () {
+                $(".nav-bar").posfixed({
+                    distance: 0,
+                    pos: "top",
+                    type: "while",
+                    hide: false
+                });             
+        });
+    </script>
+    
 </body>
 </html>
