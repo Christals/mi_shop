@@ -1,7 +1,7 @@
 $('.nav1-list').on('mouseenter', 'li', function(){			
     $('.list-child').slideDown();
 })
-$('.nav1-list').on('mouseleave', 'li', function(){
+$('.nav1-list').on('mouseleave', function(){
     $('.list-child').slideUp();
 })
 $('.nav2').on('mouseenter', 'li', function(){			

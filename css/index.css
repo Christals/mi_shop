@@ -396,7 +396,7 @@
 	height: 281px;
 	float: left;
 	text-align: center;
-	padding-top: 60px; 
+	/* padding-top: 60px;  */
 	background: #f1eded url(../images/index/flash_03.jpg) no-repeat 102px 111px;
 }
 .millSale-center .flash-sale1 span{

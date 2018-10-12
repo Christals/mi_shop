@@ -1,0 +1,147 @@
+/* footer */
+.container{
+    background: #ffffff;
+}
+.footer-service{
+    padding: 27px 0;
+    height: 80px;
+    width: 1226px;
+    border-bottom: 1px solid #e0e0e0;
+    margin: 0 auto;
+}
+.footer-service ul{
+    height: 25px;
+    font-size: 16px;
+    line-height: 25px;
+}
+.footer-service ul li{
+    border-left: 1px solid #e0e0e0;
+    width: 19.8%;
+    text-align: center;
+    float: left;
+}
+.footer-service ul li a:hover{
+    color: #ff6700;
+}
+.footer-service ul li a{
+    font-size: 17px;
+    color: #616161;
+}
+.footer-service ul i{
+    font-size: 20px;
+}
+.list-service{
+    height: 192px;
+    margin: 0 auto;
+    width: 1226px;
+}
+.list-service dl{
+    width: 160px;
+    height: 112px;
+    float: left;
+    margin: 40px 0;
+}
+.list-service dt{
+    margin: -1px 0 26px;
+    font-size: 14px;
+    line-height: 1.25;
+}
+.list-service dt a{
+    color: #424242;   
+}
+.list-service dd{
+    margin: 10px 0 0;
+    font-size: 12px;
+}
+.list-service dd a{
+    color:#232323;
+}
+.list-service dd a:hover{
+    color: #ff6700;
+}
+.list-servicer{
+    width: 252px;
+    height: 112px;
+    float: right;
+    margin: 40px 0;
+    text-align: center;
+    border-left: 1px solid #e0e0e0;
+}
+.list-servicer h2{
+    margin: 0 0 5px;
+    font-size: 22px;
+    line-height: 1;
+    color: #ff6700;
+}
+.list-servicer p{
+    margin: 0 0 16px;
+    font-size: 12px;
+}
+.list-servicer h3{
+    width: 118px;
+    height: 28px;
+    font-size: 12px;
+    line-height: 28px;
+    color: #ff6700;
+    border: 1px solid #ff6700;
+    margin-left: 66px;
+}
+.list-servicer h3 i{
+    font-size: 18px;
+    font-weight: 600;
+}
+.list-servicer h3:hover{
+    background: #ff6700;
+    color: #fff;
+}
+.site-info{
+    padding: 30px 0;
+    font-size: 12px;
+    background: #fafafa;
+}
+.container{
+    width: 1226px;
+    *zoom: 1;
+    margin-right: auto;
+    margin-left: auto;
+}
+.log{
+    width: 57px;
+    height: 57px;
+    margin-right: 10px;
+    float: left;
+}
+.info-text{
+    float: left;
+    color: #b0b0b0;
+    width: 721px;
+    font-size: 11px;
+}
+.info-text a{
+    color: #b0b0b0;
+}
+.info-text a:hover{
+    color: #ff6b00;
+}
+ 
+.info-link{
+    float: right;
+    _display: inline-block;
+    height: 28px;
+    margin: 4px 0 0;
+    width: 437px;
+}
+.info-link img{
+    width: auto;
+    height: 28px;
+    margin-left: 0px;
+}
+.site-info .slogan{
+    clear: both;
+    margin: 30px auto 0;
+    width: 267px;
+    height: 19px;
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:#bebebe;
+}
