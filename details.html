@@ -207,12 +207,18 @@
           $('.header2').load('public.html .search');          
           $('.footer').load('public.html footer'); 
     </script>
-    <!-- 头部导航栏的子导航栏的鼠标滑过显示事件 -->
+    
     <script>
+        //  头部导航栏的子导航栏的鼠标滑过显示事件 
             $(document).ready(function () {
                 $(".search_li").hover(function () {
                     $(".nav_show").toggle();
                 });
+            });
+            // 点击页面上的×隐藏‘提示登录’
+            $(document).ready(function (e) {
+                 $(".J_proLoginClose").click(function (e) {
+                      $(".hint").toggle(); }); 
             });
     </script>
      <!-- 在滑动屏幕时商品信息导航始终显示在屏幕上 -->
