@@ -16,7 +16,7 @@
      </div>
      <div class="header2"></div>
 
-     <!-- 商品信息导航 -->
+     <!-- 商品名称导航 -->
     <div class="nav-bar">
         <div class="con">
             <h2 class="J_proName">小米8 SE</h2>
@@ -50,9 +50,9 @@
             <!-- 轮播图 -->
             <div class="pro-view-choose">
                 <div class="img-icon">
-                    <div class="img-wrapper swiper-container" id="swiper2">
+                    <div class="img-wrapper swiper-container" id="swiper2" data-index = '1'>
                         <div class="img-wrap swiper-wrapper">
-                            <img class="swiper-slide" src="images/detail/detail.jpg" alt="">
+                            <img class="swiper-slide" src="images/detail/detail.jpg" alt="" >
                             <img class="swiper-slide" src="images/detail/detail1.jpg" alt="">
                             <img class="swiper-slide" src="images/detail/detail3.jpg" alt="">
                             <img class="swiper-slide" src="images/detail/detail4.jpg" alt="">
@@ -63,6 +63,21 @@
                     </div>
                     <!-- 分页器 -->
                     <!-- 左右按钮 -->
+                     
+                    <div class="img-wrapper swiper-container" id="swiper3" data-index = '2'>
+                        <div class="img-wrap swiper-wrapper">
+                            <img class="swiper-slide" src="images/detail/pink1.jpg" alt="">
+                            <img class="swiper-slide" src="images/detail/pink2.jpg" alt="">
+                            <img class="swiper-slide" src="images/detail/pink3.jpg" alt="">
+                            <img class="swiper-slide" src="images/detail/pink4.jpg" alt="">
+                        </div>
+                        <div class="swiper-button-prev "></div><!--左箭头-->
+                        <div class="swiper-button-next "></div><!--右箭头-->
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    <!-- 分页器 -->
+                    <!-- 左右按钮 -->
+                    
                 </div>
             </div>
             <!-- 商品信息 -->
@@ -113,15 +128,15 @@
                         <div class="list-2 common-list">
                             <h3 class="list-title">选择颜色</h3>
                             <ul class="choose-version choose-2">
-                                <li class="version-1">
+                                <li class="version-1" data-value='玫瑰红' data-index='1'>
                                     <a href="#">
-                                        <img src="images/detail/detail.jpg" alt="暮光金">
+                                        <img src="images/detail/detail.jpg" alt="玫瑰红">
                                         玫瑰红
                                     </a>
                                 </li>
-                                <li class="version-2">
+                                <li class="version-2" data-value='暮光金' data-index='2'>
                                     <a href="#">
-                                        <img src="images/detail/pink1.jpg" alt="玫瑰红">
+                                        <img src="images/detail/pink1.jpg" alt="暮光金">
                                         暮光金
                                     </a>
                                 </li>
@@ -197,17 +212,17 @@
      <div class="footer">
      </div>
 
-
      <script src="js/jquery-3.3.1.min.js"></script> 
      <!-- 轮播图swiper插件     -->
      <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/js/swiper.min.js"></script>
      <script src="js/swiper.js"></script>
+     <script src="js/detail.js"></script>
      <script>
           $('.header').load('public.html .nav');
           $('.header2').load('public.html .search');          
           $('.footer').load('public.html footer'); 
     </script>
-    
+
     <script>
         //  头部导航栏的子导航栏的鼠标滑过显示事件 
             $(document).ready(function () {
@@ -220,15 +235,14 @@
                  $(".J_proLoginClose").click(function (e) {
                       $(".hint").toggle(); }); 
             });
+            // 商品版本颜色选择事件
+            choose.init('.pro-main');
     </script>
+
      <!-- 在滑动屏幕时商品信息导航始终显示在屏幕上 -->
     <script src="js/jquery.min.js"></script>
     <script src="js/posfixed.js"></script>
     <script>
-          $(".pro-info").scroll(function () {
-            $("pro-view-choose").css({"margin-top" :"600px"});
-            console.log(1);
-        });
         $(document).ready(function () {
                 $(".nav-bar").posfixed({
                     distance: 0,

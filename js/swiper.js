@@ -6,18 +6,34 @@ var mySwiper1 = new Swiper ('#swiper1', {
     // grabCursor:true, //鼠标变为手，点击图片时变为握手
     autoplay: true,
     effect: 'fade',
-    pagination: {
+    pagination: { //分页器
         el: '.swiper-pagination',
         bulletElement : 'li',
         clickable :true,
     },
     navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: '.swiper-button-next',  //左箭头
+        prevEl: '.swiper-button-prev',  //右箭头
       },
 }) 
 
 var mySwiper2 = new Swiper('#swiper2', {
+    direction: 'horizontal',
+    autoplay: true,//可选选项，自动滑动
+    effect: 'fade',
+    loop : true,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        bulletElement : 'img',
+        clickable: true,
+    }, 
+})
+
+var mySwiper3 = new Swiper('#swiper3', {
     direction: 'horizontal',
     autoplay: true,//可选选项，自动滑动
     effect: 'fade',
