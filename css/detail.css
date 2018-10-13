@@ -1,6 +1,6 @@
 /* 商品名称导航 */
 .nav-bar{
-    width: 1366px;
+    width: 1348px;
     height: 70px;
     border-top: 1px solid #e0e0e0;
     z-index: 999;
@@ -39,7 +39,7 @@
 /* 提示登录 */
 .hint{
     background: #f7f7f7;
-    width: 1366px;
+    width: 1348px;
     height: 45px;
     line-height: 45px;
     text-align: center;
@@ -86,11 +86,11 @@
     min-height: 1px;
 }
 .pro-main .pro-view-choose .img-icon{
-    position: relative;
+    /* position: relative; */
     width: 560px;
-    top: 97px;
+    /* top: 97px; */
     z-index: 1;
-    margin-top: 0;
+    /* margin-top: 0; */
 }
 .pro-view-choose .img-icon .img-wrapper{
     left: 0px;
@@ -109,6 +109,12 @@
     float: left;
     width: 560px;
     height: 560px;
+}
+.img-icon .swiper-container .swiper-scrollbar
+{
+	left: 30%;
+	width: 230px;
+	height: 2px ;
 }
 /* 商品信息 */
 .pro-main .pro-info{

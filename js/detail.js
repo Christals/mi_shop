@@ -1,37 +1,83 @@
-var choose = (function(){
-    return {
-        init: function(ele){
-            this.$ele = document.querySelector(ele);
-            this.$chooseVersion = this.$ele.querySelector('.choose-version');
-            this.$versionLi = this.$chooseVersion.children;
-            this.$chooseColor = this.$ele.querySelector('.choose-2');
-            this.$chooseColorLi = this.$chooseColor.children;            
-            // console.log(this.$ele,this.$chooseVersion,this.$versionLi,this.$chooseColor,this.$chooseColorLi);
-           
-           this.$swiper2 = this.$ele.querySelector('#swiper2');
-           this.$swiper3 = this.$ele.querySelector('#swiper3');
-           console.log( this.$swiper2,this.$swiper3);           
+$(window).scroll(function() {
+    var num = document.documentElement.scrollTop;
 
-            this.event();
-        },
-        event: function(){
-            var _this = this;
-            // for(var i=0;i<=this.$versionLi.length;i++){
-            //     this.$versionLi[i].index = i;
-            //     console.log(this.$versionLi[i].index);
-            //     this.$versionLi[i].onclick = function(i){
-            //         console.log(1);
-            //             // _this.$versionLi[i].className = 'none';
-            //             _this.$versionLi[i].display = 'none';
-            //     }
-            // }
+    if(num > 800) {
+        $('.img-icon').css({
+            position: 'absolute',
+            left: '0px',
+            top: '682px'
+        })
+    } 
+    else if(num >= 200) {
+        $('.img-icon').css({
+            position: 'fixed',
+            top: '73px',
+            left: '0px'
+        })
+    } 
+    else if(num < 200) {
+        $('.img-icon').css({
+            position: 'static'
+        })
 
-            for(var j=0;j<=this.$chooseColorLi.length;j++){
-                this.$chooseColorLi[j].index = j;
-                this.$chooseColorLi[j].onclick = function(){
-                    console.log(2);
-                }
-            }
-        }
     }
-}())
+});
+
+$(function() {
+	var xin;
+	var price;
+    var yan;
+    
+    $('.choose-version').on('click', 'a', function() {
+        {
+            var target = $(event.target);
+            if(target.attr('class') == 'write') {
+                $('.swiper-container').removeClass('xianShi');
+                $('#oneI').addClass('xianShi');
+                target.parent().css({
+                    'border': '1px solid #ff6700'
+                });
+                target.parent().siblings().css({
+                    'border-color': '#e0e0e0'
+                });
+                yan = target.text().trim();
+                console.log(yan)
+                $('#yansetu').html(yan);
+            } else if(target.attr('class') == 'jin') {
+                $('.swiper-container').removeClass('xianShi');
+                $('#twoI').addClass('xianShi');
+                target.parent().css({
+                    'border': '1px solid #ff6700'
+                });
+                target.parent().siblings().css({
+                    'border-color': '#e0e0e0'
+                });
+                yan = target.text().trim();
+                $('#yansetu').html(yan);
+            } else if(target.attr('class') == 'pink') {
+                $('.swiper-container').removeClass('xianShi');
+                $('#threeI').addClass('xianShi');
+                target.parent().css({
+                    'border': '1px solid #ff6700'
+                });
+                target.parent().siblings().css({
+                    'border-color': '#e0e0e0'
+                });
+                yan = target.text().trim();
+                $('#yansetu').html(yan);
+            } else if(target.attr('class') == 'blue') {
+                $('.swiper-container').removeClass('xianShi');
+                $('#fourI').addClass('xianShi');
+                target.parent().css({
+                    'border': '1px solid #ff6700'
+                });
+                target.parent().siblings().css({
+                    'border-color': '#e0e0e0'
+                });
+                yan = target.text().trim();
+                $('#yansetu').html(yan);
+            }
+
+        }
+    })
+})

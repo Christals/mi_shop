@@ -92,7 +92,7 @@ header{
     height: 260px;
 }
 .nav{
-    width: 1366px;
+    width: 1348px;
     height: 40px;
     background: #333333;
 }
@@ -126,12 +126,14 @@ header{
     position: relative;
     border: none; 
     width: 120px;
-    color: #b0b0b0;
     height: 40px;
     float: left;
     text-align: center;
     line-height: 40px;
    
+}
+.nav-rlast a{
+    color:#b0b0b0;
 }
 .nav-rlast h2{
     width:300px;

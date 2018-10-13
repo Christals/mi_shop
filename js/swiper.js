@@ -26,11 +26,9 @@ var mySwiper2 = new Swiper('#swiper2', {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
-    pagination: {
-        el: '.swiper-pagination',
-        bulletElement : 'img',
-        clickable: true,
-    }, 
+    scrollbar: {
+		el: '.swiper-scrollbar',
+	}, 
 })
 
 var mySwiper3 = new Swiper('#swiper3', {
@@ -42,9 +40,7 @@ var mySwiper3 = new Swiper('#swiper3', {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
-    pagination: {
-        el: '.swiper-pagination',
-        bulletElement : 'img',
-        clickable: true,
-    }, 
+    scrollbar: {
+		el: '.swiper-scrollbar',
+	}, 
 })
