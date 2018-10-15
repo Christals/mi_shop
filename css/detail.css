@@ -110,6 +110,12 @@
     width: 560px;
     height: 560px;
 }
+.img-icon .xianShi{
+	z-index: 1000;
+}
+/* #swiper2{
+    z-index: 1001;
+} */
 .img-icon .swiper-container .swiper-scrollbar
 {
 	left: 30%;
@@ -412,7 +418,7 @@
     display: inline-block;
     margin-right: 15px;
     line-height: 30px;
-    margin-bottom: 10px;
+    margin-top: 6px;
 }
 .info-main-wrap a span em{
     font-style: normal;

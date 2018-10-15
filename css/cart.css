@@ -131,6 +131,11 @@
 .cart-goods .col-check{
     width: 110px;
 }
+.active
+{
+	background-color: #ff6700;
+	color: white;
+}
 .list-head .col-img{
     width: 120px;
 }
