@@ -370,12 +370,12 @@
     color: #616161;
 }
 .pro-list li span{
-    float: right;
+    float: left;
 }
 .pro-list ul .totlePrice {
     color: #ff6700;
     font-size: 24px;
-    padding-top: 20px;
+    padding-top: 32px;
 }
 .info-main-wrap .btn-wrap{
     margin: 10px 0 20px 0;

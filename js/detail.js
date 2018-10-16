@@ -45,7 +45,7 @@ $(function() {
                 });
                 yan = target.text().trim();
                 console.log(yan)
-                // $('#yansetu').html(yan);
+                $('#yansetu').html(yan);
             } else if(target.attr('class') == 'mujin') {
                 $('.swiper-container').removeClass('xianShi');
 				$('#swiper3').addClass('xianShi');
@@ -57,7 +57,7 @@ $(function() {
                 });
 				yan = target.text().trim();
 				console.log(yan);
-                // $('#yansetu').html(yan);
+                $('#yansetu').html(yan);
             } 
 
         }
@@ -177,28 +177,27 @@ $(function() {
 		console.log(target);
 		console.log(target.prop('tagName') == 'A');		
 		if(target.prop('tagName') == 'A') {
-						// console.log(JSON.parse(localStorage.getItem('xiaomi'))[0].tok);
 			if(JSON.parse(localStorage.getItem('xiaomi'))) {
 				var arr = JSON.parse(localStorage.getItem('xiaomi'))
 				var num = 1;
 				var fool;
 				var price = parseInt($('.qian').text());
-				// var iphoneColor = $("#yansetu").text();
+				var iphoneColor = $("#yansetu").text();
 				var address = $('.sheng').text() + $('.shi').text() + $('.qu').text() + $('.jie').text();
-				var name = $('.xinghaode').text();
-				// var type = $('.xinghaode').text();
+				var name = $('.type').text();
+				var type = $('.xinghaode').text();
 				var str = $('.tuPianUrl').css('background-image').slice(4);
 				var phoneurl = $('.tuPianUrl').css('background-image').slice(4).substring(0,str.length-1);
 				auto:for(var i = 0; i < arr.length; i++) {
 					for(var k in arr[i]) {
-						if(arr[i].name == name && arr[i].address == address && arr[i].price == price && arr[i].phoneurl == phoneurl) {
+						if(arr[i].name == name && arr[i].type == type && arr[i].iphoneColor == iphoneColor && arr[i].address == address && arr[i].price == price && arr[i].phoneurl == phoneurl) {
 							num = arr[i].tok + 1;
 							data = {
 								name: name,
-								// type: type,
-								// iphoneColor: iphoneColor,
+								type: type ,
 								address: address,
 								price: price,
+								iphoneColor: iphoneColor,
 								tok: num,
 								phoneurl: phoneurl
 							}
@@ -211,14 +210,14 @@ $(function() {
 						}
 					}
 				}
-				if(i !=fool) {
+				if(i != fool) {
 					var arr = JSON.parse(localStorage.getItem('xiaomi'))
 					data = {
 						name: name,
-						// type: type,
-						// iphoneColor: iphoneColor,
+						type: type,
 						address: address,
 						price: price,
+						iphoneColor: iphoneColor,
 						tok: num,
 						phoneurl: phoneurl
 					}
@@ -232,18 +231,18 @@ $(function() {
 				var arr = [];
 				var num = 1;
 				var price = parseInt($('.qian').text());
-				// var iphoneColor = $("#yansetu").text();
+				var iphoneColor = $("#yansetu").text();				
 				var address = $('.sheng').text() + $('.shi').text() + $('.qu').text() + $('.jie').text();
-				var name = $('.xinghaode').text();
-				// var type = $('.xinghaode').text();
+				var name = $('.type').text();
+				var type = $('.xinghaode').text();
 				var str = $('.tuPianUrl').css('background-image').slice(4);
 				var phoneurl = $('.tuPianUrl').css('background-image').slice(4).substring(0,str.length-1);
 				data = {
 					name: name,
-					// type: type,
-					// iphoneColor: iphoneColor,
+					type: type,
 					address: address,
 					price: price,
+					iphoneColor: iphoneColor,
 					tok: num,
 					phoneurl: phoneurl
 				}
@@ -258,7 +257,7 @@ $(function() {
 				// }
 			}
 		}
-		// location.href = 'cart.html';
+		location.href = 'cart.html';
 	});
 
 });

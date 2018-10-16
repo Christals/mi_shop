@@ -113,6 +113,8 @@
     position: relative;
     top: -1px;
     cursor: pointer;
+    background-color: #fff;
+	color: #fff;
 }
 .cart-goods .col-check .icon-checkbox-selected {
     /* color: #fff;
@@ -131,11 +133,20 @@
 .cart-goods .col-check{
     width: 110px;
 }
-.active
+.cart-goods .col-check .icon-check .move{
+	background-color: #fff;
+	color: #fff;
+}
+.cart-goods .col-check .icon-check.active{
+    background-color: #ff6700;
+	color: white;
+}
+/* .cart-goods .col-check .zongGou.active
 {
 	background-color: #ff6700;
 	color: white;
-}
+} */
+
 .list-head .col-img{
     width: 120px;
 }
@@ -233,6 +244,7 @@
     font-size: 20px;
     -webkit-transition: all .3s;
     transition: all .3s;
+    margin-left: 9px;
 }
 .change-num input{
     float: left;
@@ -244,6 +256,11 @@
     color: #424242;
     font-size: 16px;
     text-align: center;
+}
+.shang_action
+{
+	width: 80px;
+	
 }
 .item-box .col-total{
     color: #ff6700;
