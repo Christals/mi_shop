@@ -500,6 +500,12 @@
 	float: left;
 	display: block;
 }
+/* 小米结束 */
+
+/* 手机开始 */
+.iPhone,.iPhone .millCenter{
+	height: 628px;
+}
 
 
 

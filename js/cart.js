@@ -5,7 +5,7 @@ function fn() {
 	var priceAll = 0;
 	console.log($Gou);
 	for(var k = 0; k < $Gou.length; k++) {
-		console.log($Gou[k].className == 'Gou active');
+		console.log($Gou[k].className == 'iconfont icon-check Gou active');
 		if($Gou[k].className == 'iconfont icon-check Gou active') {
 			var tt = $($Gou[k]);
 			var jiage = tt.parent().parent().find('.shang_price').text();
@@ -27,8 +27,8 @@ function fn1()
 			var num3 = 0;
 			for(var i = 0; i < $Gou.length; i++) {
 				console.log($Gou[i]);
-				console.log($Gou[i].className == 'Gou active');
-				if($Gou[i].className == 'Gou active') {
+				console.log($Gou[i].className == 'iconfont icon-check Gou active');
+				if($Gou[i].className == 'iconfont icon-check Gou active') {
 					num3 += 1;
 					console.log(num3);
 
@@ -79,10 +79,6 @@ $(function() {
                             </div>`;
 			shangPing = $(shangPing);
 			$('.list-body').append(shangPing);
-			// console.log(obj.phoneurl);
-			/*$('.shang_img').css({
-				'background': 'url(' + obj.phoneurl + ') no-repeat'
-			})*/
 		}
 		//点击减去商品
 		$('.minus').on('click', function() {
@@ -94,7 +90,7 @@ $(function() {
 			}
 			target.next().html(num);
 			target.parent().parent().next().html(target.next().text() * target.parent().parent().prev().text() + '元')
-			fn()
+			fn();
 		})
 		// 点击加商品
 		$('.puls').on('click', function() {
@@ -121,7 +117,7 @@ $(function() {
 			}  else if($('.quanxuan i').attr('class') == 'zongGou iconfont icon-check move') {
 				$('.shang_check i').attr('class', '');
 				$('.shang_check i').addClass('iconfont icon-check Gou move');
-				num1 = 0;
+				num1 = arr.length;
 				$('#J_selTotalNum').html(num1);
 				fn();
 			}
@@ -163,20 +159,20 @@ $(function() {
 		$('#J_selTotalNum').html(num1);
 
 	} else {
-	// 	var emptyCart = `<div class="cart-empty">
-	// 	<h2>您的购物车还是空的！</h2>
-	// 	<p class="login-desc">登录后将显示您之前加入的商品</p>
-	// 	<a href="login.html" class="btn login-btn">立即登录</a>
-	// 	<a href="index.html" class="btn index-btn">马上去购物</a>
-	// </div>`
-	// emptyCart = $(emptyCart);
+		var emptyCart = `<div class="cart-empty">
+		<h2>您的购物车还是空的！</h2>
+		<p class="login-desc">登录后将显示您之前加入的商品</p>
+		<a href="login.html" class="btn login-btn">立即登录</a>
+		<a href="index.html" class="btn index-btn">马上去购物</a>
+	</div>`
+	emptyCart = $(emptyCart);
 	// $('.cart-goods').append(emptyCart);
-		$('.page-main').html('购物空空');
+		$('.page-main').html(emptyCart);
 		$('.page-main').css({
 			'font-size': '40px',
 			color: '#000',
 			'text-align': 'center',
-			'line-height': '340px'
+			'line-height': '100px'
 		})
 
 	}
