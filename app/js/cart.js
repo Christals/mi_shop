@@ -1,6 +1,5 @@
 // 根据勾选的商品的数量计算总价
 function fn() {
-	
     var $Gou = document.querySelectorAll('.Gou');
 	var priceAll = 0;
 	console.log($Gou);
@@ -18,7 +17,6 @@ function fn() {
 	}
 	console.log(priceAll);
     $('#J_cartTotalPrice').html(priceAll); //总价
-    // console.log($('#J_cartTotalPrice').html(priceAll));
 }
 function fn1()
 { //勾选几个商品的总价
@@ -34,7 +32,6 @@ function fn1()
 
 				}
 				// console.log($Gou[i].className)
-			
 			}
 			console.log(num3);
 			$('#J_selTotalNum').html(num3);
@@ -45,8 +42,7 @@ $(function() {
 		var i = localStorage.getItem('xiaomi');
 		arr = JSON.parse(i);
 		var num = arr.length;
-		var num1 = 0; //判断选择几个
-
+		var num1 = 0; //判断选择几个s商品
 		for(var i = 0; i < arr.length; i++) {
 
 			obj = arr[i];
@@ -176,10 +172,4 @@ $(function() {
 		})
 
 	}
-	$('.login').click(function(){
-		location.href='login.html'
-	})
-	$('.register').click(function(){
-		location.href='register.html'
-	})
 })

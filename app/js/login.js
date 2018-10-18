@@ -26,7 +26,7 @@ var login = (function(){
                         _this.loginSuccess(data);
                     }
                 }
-                sendAjax('http://localhost:5555/Project1/mi_shop/app/php/login.php', params);
+                sendAjax('http://localhost:5555/mi_shop/app/php/login.php', params);
             }
         },
         loginSuccess: function(data) {
@@ -40,5 +40,4 @@ var login = (function(){
             }
         }
     }
-
 }())

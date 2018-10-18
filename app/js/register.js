@@ -26,7 +26,7 @@ var register = (function(){
                         _this.loginSuccess(data);
                     }
                 }
-                sendAjax('http://localhost:5555/Project1/mi_shop/app/php/register.php', params);
+                sendAjax('http://localhost:5555/mi_shop/app/php/register.php', params);
             }
             this.$usernameInp.onchange = function(){
                 var params = {
@@ -38,7 +38,7 @@ var register = (function(){
                         _this.checkName(data);
                     }
                 }
-                sendAjax('http://localhost:5555/Project1/mi_shop/app/php/check_username.php', params);
+                sendAjax('http://localhost:5555/mi_shop/app/php/check_username.php', params);
             }
         },
         checkName: function(data) {
