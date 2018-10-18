@@ -4,35 +4,35 @@
         {
             "id":1,
             "ps": "新品",
-            "image": "http://localhost:5555/Project1/mi_shop/images/index/nav1_03.jpg",
+            "image": "http://localhost:5555/Project1/mi_shop/app/images/index/nav1_03.jpg",
             "name": "小米8 青春版",
             "price": "1399元"
         },
         {
             "id":2,
             "ps": "新品",
-            "image": "http://localhost:5555/Project1/mi_shop/images/index/nav1_05.jpg",
+            "image": "http://localhost:5555/Project1/mi_shop/app/images/index/nav1_05.jpg",
             "name": "小米8 青春版",
             "price": "1399元"
         },
         {
             "id":2,
             "ps": "新品",
-            "image": "http://localhost:5555/Project1/mi_shop/images/index/nav1_07.jpg",
+            "image": "http://localhost:5555/Project1/mi_shop/app/images/index/nav1_07.jpg",
             "name": "小米8 青春版",
             "price": "1399元"
         },
         {
             "id":2,
             "ps": "新品",
-            "image": "http://localhost:5555/Project1/mi_shop/images/index/nav1_07.jpg",
+            "image": "http://localhost:5555/Project1/mi_shop/app/images/index/nav1_07.jpg",
             "name": "小米8 青春版",
             "price": "1399元"
         },
         {
             "id":2,
             "ps": "新品",
-            "image": "http://localhost:5555/Project1/mi_shop/images/index/nav1_07.jpg",
+            "image": "http://localhost:5555/Project1/mi_shop/app/images/index/nav1_07.jpg",
             "name": "小米8 青春版",
             "price": "1399元"
         }

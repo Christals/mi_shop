@@ -184,7 +184,7 @@
 	float: left;
 }
 /* 分页器 */
-.swiper-container .swiper-pagination{
+#swiper1 .swiper-pagination{
 	/* z-index: 120; */
 	width: 400px;
 	height: 18px;
@@ -207,15 +207,15 @@
 	opacity: 1;     
 }
 /* 轮播左箭头 */
-.swiper-container .swiper-button-prev,.swiper-container .swiper-button-next{
+#swiper1 .swiper-button-prev,#swiper1 .swiper-button-next{
     position: absolute;
 	z-index: 999;
 }
-.swiper-container .swiper-button-prev{
+#swiper1 .swiper-button-prev{
 	left: 235px;
 }
 /* 轮播右箭头 */
-.swiper-container .swiper-button-next{
+#swiper1 .swiper-button-next{
     left: 1199px;
 }
 /* 竖导航栏部分 */
@@ -445,7 +445,7 @@
 	margin-left: 14px;
 	width: 234px;
 	height: 341px;
-	background: #fafafa;
+	background: #fff;
 }
 .discount .discount1 span{
 	display: inline-block;
@@ -504,7 +504,30 @@
 
 /* 手机开始 */
 .iPhone,.iPhone .millCenter{
-	height: 628px;
+	height: 864px;
+	background:  #fafafa;;
+}
+.millSale-center .rightPhone{
+	height: 614px;
+	padding-top: 0px;
+}
+.leftPhone{
+	height: 614px;
+}
+.leftPhone .discount1{
+   height: 300px;
+   border-top: none;
+   margin-bottom: 14px;
+   background: #fff;
+}
+.leftPhone .discount1 .shop-image {
+	height: 171px;
+}
+.leftPhone .discount1 h3 {
+	margin-bottom: 8px;
+}
+.leftPhone .discount1 .price {
+	margin-top: 18px;
 }
 
 

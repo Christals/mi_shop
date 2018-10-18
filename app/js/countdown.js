@@ -25,7 +25,7 @@ var countDown = (function () {
                 _this.$minus.innerHTML = minu; 
                 var secd = Math.round(surplusTimes % 60);
                 _this.$secs.innerHTML = secd;
-                console.log(hour+ ':' + minu + ':' + secd);              
+                // console.log(hour+ ':' + minu + ':' + secd);              
                 if (surplusTimes <= 0) {
                     console.log('时间到！');
                     clearInterval(countdowns);

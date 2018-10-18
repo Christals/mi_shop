@@ -44,7 +44,7 @@ $(function() {
                     'border-color': '#e0e0e0'
                 });
                 yan = target.text().trim();
-                console.log(yan)
+                console.log(yan);
                 $('#yansetu').html(yan);
             } else if(target.attr('class') == 'mujin') {
                 $('.swiper-container').removeClass('xianShi');
@@ -74,7 +74,7 @@ $(function() {
 			target.parent().siblings().css({
 				'border-color': '#e0e0e0'
 			})
-			$('.ddpig').html('');
+			// $('.ddpig').html('');
 			$('.xinghaode').text(target.find('.name').html())
 			$('.zuiPrice').text(target.find('.price').html())
 			$('.qian').html($('.zuiPrice').text());
@@ -86,7 +86,7 @@ $(function() {
 			target.parent().siblings().css({
 				'border-color': '#e0e0e0'
 			})
-			$('.ddpig').html('');
+			// $('.ddpig').html('');
 			$('.xinghaode').text(target.find('.name').html())
 			$('.zuiPrice').text(target.find('.price').html())
 			$('.qian').html($('.zuiPrice').text());
