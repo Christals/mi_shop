@@ -2,7 +2,6 @@
 var gulp = require('gulp'),
     htmlmin = require('gulp-htmlmin'),
     uglify = require('gulp-uglify'),
-    // cssmin = require('gulp-mincss'),
     cleanCSS = require('gulp-clean-css'),
     imagemin = require('gulp-imagemin'),
     babel = require('gulp-babel'),
@@ -21,16 +20,24 @@ gulp.task('html', function() {
 	    .pipe(htmlmin(options))
 	    .pipe(gulp.dest('dist/'));
 });
+// 把es6转为es5
+// gulp.task('default', () =>
+//     gulp.src('app/**/*.js')
+//         .pipe(babel({
+//             presets: ['@babel/env']
+//         }))
+//         .pipe(gulp.dest('dist'))
+// );
 // 压缩js文件
-gulp.task('js', function (cb) {
-    pump([
-          gulp.src('app/*.js'),
-          uglify(),
-          gulp.dest('dist')
-      ],
-      cb
-    );
-  });
+gulp.task('js',function(){
+	gulp.src('app/**/*.js')
+	 .pipe(babel({
+            presets: ['@babel/env']
+        }))
+	.pipe(uglify())
+    .pipe(gulp.dest('dist/js'));
+});
+
 // 压缩css文件
 gulp.task('minify-css', () => {
     return gulp.src('app/*.css')
@@ -43,13 +50,4 @@ gulp.task('images', () =>
     gulp.src('app/images/*')
         .pipe(imagemin())
         .pipe(gulp.dest('dist/images'))
-);
-
-// 把es6转为es5
-gulp.task('es5', () =>
-    gulp.src('app/app.js')
-        .pipe(babel({
-            presets: ['@babel/env']
-        }))
-        .pipe(gulp.dest('dist'))
 );

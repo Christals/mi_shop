@@ -47,8 +47,7 @@ $(function() {
 
 			obj = arr[i];
 			// console.log(obj)
-            var shangPing = ` 
-                                <div class="item-box">
+            var shangPing = ` <div class="item-box">
                                     <div class="item-table">
                                         <div class="item-row">
                                         <div class="shang_check col col-check shangPing ">
